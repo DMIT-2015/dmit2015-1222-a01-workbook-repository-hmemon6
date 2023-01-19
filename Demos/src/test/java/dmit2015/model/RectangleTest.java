@@ -1,4 +1,4 @@
-package smit2015.model;
+package dmit2015.model;
 
 import org.junit.jupiter.api.Test;
 
@@ -8,37 +8,34 @@ class RectangleTest {
 
     @Test
     void area_ValidValues_shouldPass() {
-        //Arrange
+        // Arrange
         Rectangle currentRectangle = new Rectangle();
-        //ACt
-        currentRectangle.setTheLength(10);
+        // Act
+        currentRectangle.setLength(10);
         currentRectangle.setWidth(20);
         // Assert
-
         assertEquals(200, currentRectangle.area());
     }
 
     @Test
     void perimeter_ValidValues_shouldPass() {
-        //Arrange
+        // Arrange
         Rectangle currentRectangle = new Rectangle();
-        //ACt
-        currentRectangle.setTheLength(5);
+        // Act
+        currentRectangle.setLength(5);
         currentRectangle.setWidth(15);
         // Assert
-
         assertEquals(40, currentRectangle.perimeter());
     }
 
     @Test
     void diagonal_ValidValues_shouldPass() {
-        //Arrange
+        // Arrange
         Rectangle currentRectangle = new Rectangle();
-        //ACt
-        currentRectangle.setTheLength(40);
+        // Act
+        currentRectangle.setLength(40);
         currentRectangle.setWidth(35);
         // Assert
-
         assertEquals(53.15, currentRectangle.diagonal(), 0.005);
     }
 }
