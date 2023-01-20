@@ -1,4 +1,4 @@
-package dmit2015;
+package dmit2015.model;
 
 import org.junit.jupiter.api.*; //for @Test and Assertions class
 
